@@ -10,9 +10,7 @@ But hey, Apple of course follows GDPR, and they offer a great way to export note
 
 https://support.apple.com/en-us/HT204055#note
 
-```
-To copy notes, open the Notes app on your Mac or at iCloud.com. Copy the text of each note and paste it into a document on your computer, such as a Pages or TextEdit document. Save the document to your computer.
-```
+> To copy notes, open the Notes app on your Mac or at iCloud.com. Copy the text of each note and paste it into a document on your computer, such as a Pages or TextEdit document. Save the document to your computer.
 
 With over 2,000 notes, this seems slightly inefficient.
 
