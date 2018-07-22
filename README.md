@@ -21,10 +21,15 @@ There is a closed-source Mac app available: [Exporter](https://itunes.apple.com/
 - [x] Export all your Apple Notes into Markdown files
 - [ ] Set the Creation and Modified data of each file
 - [x] Group the exported files into folders
+- [x] Store all notes into one directory to import into Bear Notes
 - [ ] Automatically detect duplicate files
 - [ ] Merge multiple Notes databases into one
+- [ ] Include the folder name as hashtag for Bear
 - [ ] Fully open source, customize as you want
 
+## What it doesn't do
+
+- Export images, you'll need to manually copy those over
 
 ## Installation
 
