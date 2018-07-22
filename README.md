@@ -44,3 +44,11 @@ bundle update
 ```
 bundle exec ruby export.rb
 ```
+
+## How to import into Bear
+
+- `File` -> `Import Notes`
+- Open the `all_notes`
+- Check the following boxes in the `Options`
+  - `Keep the original creation and modificiation date`
+  - `Use first line as title`
