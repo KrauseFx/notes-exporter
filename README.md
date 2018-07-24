@@ -1,3 +1,5 @@
+# Early WIP, not ready to be used yet
+
 # Apple Notes Exporter
 
 GDPR defines the `Right to data portability`, but for some reason this hasn't fully reached iCloud.com yet.
@@ -14,7 +16,7 @@ https://support.apple.com/en-us/HT204055#note
 
 With over 2,000 notes, this seems slightly inefficient.
 
-There is a closed-source Mac app available: [Exporter](https://itunes.apple.com/us/app/exporter/id1099120373?mt=12) that exports your Mac Notes as markdown files.
+There is a closed-source Mac app available: [Exporter](https://itunes.apple.com/us/app/exporter/id1099120373?mt=12) that exports your Mac Notes as markdown files, but it doesn't do all the things I need it to do.
 
 ## What this tool can do
 
