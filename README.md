@@ -24,6 +24,8 @@ I took 2 approaches for this, the one at the bottom doesn't work with the new iC
 
 I was able to implement a complete migration for all my notes using [Keyboard Maestro](https://www.keyboardmaestro.com/main/). It uses copy and paste directly into Bear Notes, resulting in all images to be copied over also. It takes a long time to run (I left it running over night), but the result was good and the script was stable. The trickiest piece of the script was to update the Modified Date of each note to the original one, which could only be done directly through the sqlite database of Bear Notes. 
 
+While Bear Notes also uses iCloudKit, at least you can easily export all your notes into any format (e.g. Markdown, HTML)
+
 ## [Deprecated] Database exporter
 
 At first, I built a Ruby script that exports all the notes by accessing the SQLite database directly. The database contained all your notes as HTML text, so it was easy to convert them from HTML to markdown. However as it turns out, Apple migrated to a new format, and just left the old database file on your machine. When I looked into the new database format, it seems like the data is stored encrypted, and I couldn't figure out how to access it (yeah data lock-in, this is great), even if your notes aren't encrypted using the password protection UI.
