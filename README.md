@@ -1,5 +1,3 @@
-# Early WIP, not ready to be used yet
-
 # Apple Notes Exporter
 
 GDPR defines the `Right to data portability`, but for some reason this hasn't fully reached iCloud.com yet.
@@ -18,7 +16,19 @@ With over 2,000 notes, this seems slightly inefficient.
 
 There is a closed-source Mac app available: [Exporter](https://itunes.apple.com/us/app/exporter/id1099120373?mt=12) that exports your Mac Notes as markdown files, but it doesn't do all the things I need it to do.
 
-## What this tool can do
+I took 2 approaches for this, the one at the bottom doesn't work with the new iCloud format.
+
+## Keyboard Maestro based exporter
+
+[TODO link to file here]
+
+I was able to implement a complete migration for all my notes using [Keyboard Maestro](https://www.keyboardmaestro.com/main/). It uses copy and paste directly into Bear Notes, resulting in all images to be copied over also. It takes a long time to run (I left it running over night), but the result was good and the script was stable. The trickiest piece of the script was to update the Modified Date of each note to the original one, which could only be done directly through the sqlite database of Bear Notes. 
+
+## [Deprecated] Database exporter
+
+At first, I built a Ruby script that exports all the notes by accessing the SQLite database directly. The database contained all your notes as HTML text, so it was easy to convert them from HTML to markdown. However as it turns out, Apple migrated to a new format, and just left the old database file on your machine. When I looked into the new database format, it seems like the data is stored encrypted, and I couldn't figure out how to access it (yeah data lock-in, this is great), even if your notes aren't encrypted using the password protection UI.
+
+### What this tool can do
 
 - [x] Export all your Apple Notes into Markdown files
 - [x] Set the Creation and Modified data of each file
@@ -29,11 +39,11 @@ There is a closed-source Mac app available: [Exporter](https://itunes.apple.com/
 - [x] Include the folder name as hashtag for Bear
 - [x] Fully open source, customize as you want
 
-## What it doesn't do
+### What it doesn't do
 
 - Export images, you'll need to manually copy those over
 
-## Installation
+### Installation
 
 ```
 git clone https://github.com/KrauseFx/notes-exporter
@@ -41,13 +51,13 @@ cd notes-exporter
 bundle update
 ```
 
-## Usage
+### Usage
 
 ```
 bundle exec ruby export.rb
 ```
 
-## How to import into Bear
+### How to import into Bear
 
 - `File` -> `Import Notes`
 - Open the `all_notes`
