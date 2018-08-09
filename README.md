@@ -20,11 +20,17 @@ I took 2 approaches for this, the one at the bottom doesn't work with the new iC
 
 ## Keyboard Maestro based exporter
 
-[TODO link to file here]
-
 I was able to implement a complete migration for all my notes using [Keyboard Maestro](https://www.keyboardmaestro.com/main/). It uses copy and paste directly into Bear Notes, resulting in all images to be copied over also. It takes a long time to run (I left it running over night), but the result was good and the script was stable. The trickiest piece of the script was to update the Modified Date of each note to the original one, which could only be done directly through the sqlite database of Bear Notes. 
 
 While Bear Notes also uses iCloudKit, at least you can easily export all your notes into any format (e.g. Markdown, HTML)
+
+[Download Notes2Bear.kmmacros](./Notes2Bear.kmmacros), open it and do the following: 
+
+1. Open the Notes app and click on the `Edit date` until it shows the modified date
+1. Open Bear to view all the Notes (not a folder)
+1. Open "All iCloud" in the Notes app.
+1. Make sure to add one line of the last note in the list to this workflow (bottom of workflow) so the script knows when to stop
+1. Make sure to have your Notes app unlocked in case you have any encrypted notes, as otherwise the script will be interrupted
 
 ## [Deprecated] Database exporter
 
