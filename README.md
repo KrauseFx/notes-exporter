@@ -24,7 +24,7 @@ I was able to implement a complete migration for all my notes using [Keyboard Ma
 
 While Bear Notes also uses iCloudKit, at least you can easily export all your notes into any format (e.g. Markdown, HTML)
 
-[Download Notes2Bear.kmmacros](./Notes2Bear.kmmacros), open it and do the following: 
+[Open Notes2Bear.kmmacros](https://raw.githubusercontent.com/KrauseFx/notes-exporter/master/Notes2Bear.kmmacros), download it by hitting `CMD` + `S` and opening it up with [Keyboard Maestro](https://www.keyboardmaestro.com/main/).
 
 1. Open the Notes app and click on the `Edit date` until it shows the modified date
 1. Open Bear to view all the Notes (not a folder)
