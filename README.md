@@ -36,21 +36,6 @@ While Bear Notes also uses iCloudKit, at least you can easily export all your no
 
 At first, I built a Ruby script that exports all the notes by accessing the SQLite database directly. The database contained all your notes as HTML text, so it was easy to convert them from HTML to markdown. However as it turns out, Apple migrated to a new format, and just left the old database file on your machine. When I looked into the new database format, it seems like the data is stored encrypted, and I couldn't figure out how to access it (yeah data lock-in, this is great), even if your notes aren't encrypted using the password protection UI.
 
-### What this tool can do
-
-- [x] Export all your Apple Notes into Markdown files
-- [x] Set the Creation and Modified data of each file
-- [x] Group the exported files into folders
-- [x] Store all notes into one directory to import into Bear Notes
-- [ ] Automatically detect duplicate files
-- [ ] Merge multiple Notes databases into one
-- [x] Include the folder name as hashtag for Bear
-- [x] Fully open source, customize as you want
-
-### What it doesn't do
-
-- Export images, you'll need to manually copy those over
-
 ### Installation
 
 ```
